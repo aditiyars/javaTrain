@@ -27,17 +27,29 @@ public class App {
         numbers.add(2);
         numbers.add(0);
 
-        // for (Integer integer : numbers) {
-        //     System.out.print(integer);
-        // }
+        Excercise.findSumNumber(numbers, sum);
+        Excercise.soalI(numbers);
 
-        for (int i = 0; i < numbers.size(); i++) {
-            for (int j = numbers.size()-1; j > i; j--) {
-                if(numbers.get(i)+numbers.get(j) == sum){
-                    System.out.println("Numbers = "+ numbers.get(i) + " "+ numbers.get(j));
-                }
-            }
-        }
+        List<String> trainee = new ArrayList<>();
+        trainee.add("Anas");
+        trainee.add("SheiLA");
+        trainee.add("SULAS");
+        trainee.add("Ficri");
+        trainee.add("adiT");
+        trainee.add("dARIAN");
+        trainee.add("ReDhA");
+
+
+        Excercise.soalII(trainee);
+
+        String[] vowel = {"a", "i", "u", "e", "o"};
+        Excercise.soalIII(vowel);
+
+        int[] scores = {1, 1, 4};
+        Excercise.soalIV(scores);
+
+        String s = "Hi, my name is Adit";
+        Excercise.soalV(s);
 
     }
 }
